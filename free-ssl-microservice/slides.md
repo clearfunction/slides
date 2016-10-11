@@ -4,6 +4,8 @@ Daniel Pritchett // Clear Function // Memphis, TN
 
 Devspace 2016
 
+[![clear function logo](img/cf_logo.jpg)](http://clearfunction.com)
+
 ---
 
 <!-- .slide: data-background="img/mr_fusion.gif" -->
@@ -311,3 +313,15 @@ Java < JDK 8u101
 * It's got simple, free HTTPS thanks to Let's Encrypt ([letsencrypt.org](https://letsencrypt.org)) and Caddy ([caddyserver.com](https://caddyserver.com))
 * A padlock icon on a website doesn't guarantee trustworthy site admins
 * Certs last 90 days
+
+---
+
+![qr code for this slideshow](https://goo.gl/gxgq51.qr)
+
+# Want more?
+
+* Find me at [@dpritchett](https://twitter.com/dpritchett) 🐦
+* Listen in on the 🎙 [It Depends podcast](http://podcast.clearfunction.com)! 🎙
+* Hire us at [clearfunction.com](http://clearfunction.com)
+
+[![clear function logo](img/cf_logo.jpg)](http://clearfunction.com)
