@@ -4,12 +4,11 @@ Daniel Pritchett // Clear Function // Memphis, TN
 
 DevSpace 2016
 
-[![clear function logo](img/cf_logo.jpg)](http://clearfunction.com)
+![Clear Function](img/clear-function-logo-white.svg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 225px" -->
 
 ---
 
-![Sponsors](../brief-history-of-threading/images/sponsors.png) <!-- .element: style="border: none; width: 100%; background-color: rgba(0,0,0,0); box-shadow: none" -->
-
+![Sponsors](img/sponsors.png) <!-- .element: style="border: none; width: 100%; background-color: rgba(0,0,0,0); box-shadow: none" -->
 
 ---
 
@@ -59,7 +58,8 @@ DevSpace 2016
 ## I've never set up SSL before, is it easy?
 
 Not exactly...
-![excerpt from comodo ssl cert setup instructions](img/comodo_instructions.png)
+
+![excerpt from comodo ssl cert setup instructions](img/comodo_instructions.png) <!-- .element: style="width: 65%; " -->
 
 
 ----
@@ -132,17 +132,20 @@ daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.
 | o   |
 |     |
 |   o |
- -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----⏎                                                                                                                           
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
  -----
 | o   |
 |  o  |
 |   o |
- -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----⏎                                                                                                                           
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
  -----
 | o   |
 |  o  |
 |   o |
- -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----⏎                                                                                                                           
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
  -----
 | o   |
 |     |
@@ -236,7 +239,7 @@ If you want more than one 'microservice' just run it on a different port and tel
 
 ## Upstart script
 
-```config
+```sh
 root@bloggy:/etc/init# cat caddy.conf
 description "Caddy HTTP/2 web server"
 
@@ -301,7 +304,7 @@ https://letsencrypt.org/how-it-works/
 ## Domain Validation
 
 ![how it works challenge](img/howitworks_challenge.png)
-![how it works authorization](img/howitworks_authorization.png)
+![how it works authorization](img/howitworks_authorization.png) <!-- .element: style="width: 65%; " -->
 
 ----
 
@@ -309,7 +312,7 @@ https://letsencrypt.org/how-it-works/
 
 > Once the agent has an authorized key pair, requesting, renewing, and revoking certificates is simple—just send certificate management messages and sign them with the authorized key pair.
 
-![how it works certificate](img/howitworks_certificate.png)
+![how it works certificate](img/howitworks_certificate.png) <!-- .element: style="width: 65%; " -->
 
 ----
 
@@ -339,12 +342,20 @@ Java < JDK 8u101
 
 ---
 
-![qr code for this slideshow](https://goo.gl/gxgq51.qr)
 
-# Want more?
+<div style="float: left; width: 40%">
+  <img alt="qr code for this slideshow" src="https://goo.gl/gxgq51.qr"/>
+  <h2>Want more?</h2>
+</div>
 
-* Find me at [@dpritchett](https://twitter.com/dpritchett) 🐦
-* Listen in on the 🎙 [It Depends podcast](http://podcast.clearfunction.com)! 🎙
-* Hire us at [clearfunction.com](http://clearfunction.com)
+<div style="float: right; width: 50%">
+  <ul>
+    <li>Find me at <a href="https://twitter.com/dpritchett">@dpritchett 🐦</a></li>
+    <li>Listen in on the 🎙 <a href="http://podcast.clearfunction.com">It Depends podcast! 🎙</a></li>
+    <li>Hire us at <a href="http://clearfunction.com">clearfunction.com</a></li>
+  </ul>
+</div>
 
-[![clear function logo](img/cf_logo.jpg)](http://clearfunction.com)
+
+![Clear Function](img/clear-function-logo-white.svg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 225px" -->
+
