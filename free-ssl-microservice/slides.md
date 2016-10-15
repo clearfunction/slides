@@ -333,7 +333,7 @@ Java < JDK 8u101
 
 * We have a little microservice written in Go: [github.com/dpritchett/diceRoller](https://github.com/dpritchett/diceRoller)
 * It's got simple, free HTTPS thanks to Let's Encrypt ([letsencrypt.org](https://letsencrypt.org)) and Caddy ([caddyserver.com](https://caddyserver.com))
-* A padlock icon on a website doesn't guarantee trustworthy site admins
+* A 🔒 icon on a website doesn't guarantee trustworthy site admins
 * Certs last 90 days, try renewing every 60
 * "EV" certs offer even fancier padlocks
 * Non-caddy server setups can be managed using a command line Let's Encrypt client (nginx, etc)
