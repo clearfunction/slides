@@ -2,9 +2,14 @@
 
 Daniel Pritchett // Clear Function // Memphis, TN
 
-Devspace 2016
+DevSpace 2016
 
 [![clear function logo](img/cf_logo.jpg)](http://clearfunction.com)
+
+---
+
+![Sponsors](../brief-history-of-threading/images/sponsors.png) <!-- .element: style="border: none; width: 100%; background-color: rgba(0,0,0,0); box-shadow: none" -->
+
 
 ---
 
@@ -62,7 +67,7 @@ Not exactly...
 ## What if I just want to play around with a sorta-secure site for free?
 
 * Historically SSL certs started at $100 or so - not really hobbyist level stakes in the age of weekend github projects
-* You can always generate a "snake oil" cert
+* You can always generate a "snake oil" / "self-signed" cert
 * We'll save Let's Encrypt for the end
 
 ---
@@ -122,17 +127,33 @@ daniel@Molly-Millions ~/c/d/diceRoller>
 Ok, maybe this is just one really tiny web app.
 
 ```sh
-daniel@Molly-Millions ~/c/d/diceRoller> curl https://dice.dpritchett.net
-You rolled a 6.
-daniel@Molly-Millions ~/c/d/diceRoller> curl https://dice.dpritchett.net
-You rolled a 3.
-daniel@Molly-Millions ~/c/d/diceRoller> curl https://dice.dpritchett.net
-You rolled a 1.
-daniel@Molly-Millions ~/c/d/diceRoller> curl https://dice.dpritchett.net
-You rolled a 2.
-daniel@Molly-Millions ~/c/d/diceRoller> time curl https://dice.dpritchett.net
-You rolled a 3.        0.40 real         0.02 user         0.00 sys
-daniel@Molly-Millions ~/c/d/diceRoller>
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----
+| o   |
+|     |
+|   o |
+ -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----
+| o   |
+|  o  |
+|   o |
+ -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----
+| o   |
+|  o  |
+|   o |
+ -----⏎                                                                                                                           daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+ -----
+| o   |
+|     |
+|   o |
+ -----⏎
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> time curl https://dice.dpritchett.net
+ -----
+| o   |
+|  o  |
+|   o |
+ -----        0.29 real         0.02 user         0.01 sys
 ```
 
 ----
@@ -312,7 +333,9 @@ Java < JDK 8u101
 * We have a little microservice written in Go: [github.com/dpritchett/diceRoller](https://github.com/dpritchett/diceRoller)
 * It's got simple, free HTTPS thanks to Let's Encrypt ([letsencrypt.org](https://letsencrypt.org)) and Caddy ([caddyserver.com](https://caddyserver.com))
 * A padlock icon on a website doesn't guarantee trustworthy site admins
-* Certs last 90 days
+* Certs last 90 days, try renewing every 60
+* "EV" certs offer even fancier padlocks
+* Non-caddy server setups can be managed using a command line Let's Encrypt client (nginx, etc)
 
 ---
 
