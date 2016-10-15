@@ -12,8 +12,6 @@ DevSpace 2016
 
 ---
 
-<!-- .slide: data-background="img/mr_fusion.gif" -->
-
 ## Buckle up
 
 * This talk is probably better suited for intermediate level developers/admins and up
