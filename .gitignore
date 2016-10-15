@@ -2,3 +2,15 @@
 
 *.swp
 *~
+
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+.DS_Store
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+css/reveal.min.css
