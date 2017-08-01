@@ -88,8 +88,8 @@ MacOS and Windows both use a hypervisor to run a tiny linux kernel to then run t
 <pre>
     <code data-trim data-noescape class="bash">
         docker ps
-        docker kill container
-        docker images
+docker kill container
+docker images
     </code>
 </pre>
 <..>

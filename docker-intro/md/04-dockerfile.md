@@ -8,11 +8,11 @@
 
 <pre>
     <code>
-    FROM !base! # the base image
-    RUN !cmd! # execute a command
-    WORKDIR !directory! # cd into a directory for RUN/ADD/COPY commands
-    COPY !filename! # adds file to image
-    EXPOSE !port! # exposes a port to the host
+    FROM ruby # the base image
+    RUN ruby app.rb # execute a command
+    WORKDIR /app # cd into a directory for RUN/ADD/COPY commands
+    COPY . /app # adds file to image
+    EXPOSE 3000 # exposes a port to the host
     CMD ["bash"] # the default command to run if nothing is passed in to run
     </code>
 </pre>
@@ -55,7 +55,7 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 # install gems
-ADD Gemfile* $APP_HOME/
+COPY Gemfile* $APP_HOME/
 RUN bundle install
 
 # upload source from this directory into the image
