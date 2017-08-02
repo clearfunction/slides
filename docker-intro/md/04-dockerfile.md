@@ -17,6 +17,16 @@
     </code>
 </pre>
 
+Note:
+
+cd ~/dev/dockerfile
+
+code .
+
+docker build -t jesse/rubyexample .
+
+docker run -it --rm -p 4567:4567 jesse/rubyexample
+
 <..>
 
 ## building an image
@@ -33,7 +43,7 @@
 
 <pre>
     <code>
-    docker run -it --rm -p 3000:3000 jesse/rubyexample
+    docker run -it --rm -p 4567:4567 jesse/rubyexample
     </code>
 </pre>
 

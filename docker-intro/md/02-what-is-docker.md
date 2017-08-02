@@ -37,6 +37,8 @@ An image is a lightweight, stand-alone, executable package that includes everyth
 
 # Availability
 
+https://www.docker.com/community-edition
+
 - Linux
 - MacOS
 - Windows
@@ -63,6 +65,25 @@ MacOS and Windows both use a hypervisor to run a tiny linux kernel to then run t
 
 ## Demo
 
+Note:
+docker run -it --rm ubuntu
+
+cat /etc/issue
+
+docker run -it --rm centos
+
+cat /etc/os-release
+
+docker ps
+
+docker kill container
+
+docker images
+
+docker run -it --rm -p 8080:80 wordpress
+
+open http://localhost:8080
+
 <..>
 <pre>
     <code data-trim data-noescape class="bash">
@@ -83,6 +104,7 @@ MacOS and Windows both use a hypervisor to run a tiny linux kernel to then run t
         docker run -it --rm centos
     </code>
 </pre>
+
 <..>
 
 <pre>
