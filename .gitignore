@@ -1,6 +1,7 @@
 # vimmin
 
 *.swp
+*.swo
 *~
 
 .idea/

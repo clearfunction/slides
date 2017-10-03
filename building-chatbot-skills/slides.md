@@ -1,6 +1,4 @@
-## Building Chatbot Skills and (Easily) Publishing Them as Gems
-
-Daniel Pritchett // Clear Function // Memphis, TN
+Daniel Pritchett // Memphis, TN
 
 Southeast Ruby 2017
 
@@ -8,7 +6,28 @@ Southeast Ruby 2017
 
 ---
 
+## SPONSORS SLIDE?
 ![Sponsors](img/sponsors.png) <!-- .element: style="border: none; width: 100%; background-color: rgba(0,0,0,0); box-shadow: none" -->
+
+---
+
+# Who am I and why do I like chat so much?
+
+---
+
+# What do chatbots look like?
+
+---
+
+# Meet Lita
+
+----
+
+# Pieces
+
+- Core bot
+- Skills / handlers
+- Extensions
 
 ---
 
@@ -19,31 +38,6 @@ Southeast Ruby 2017
 * `rake-release`
 * Heroku
 * Docker
-
----
-
-## Releasing the gem
-
-### rake release
-
-```
-❯❯❯ rake -T | grep rel
-rake release[remote]  # Create tag v1.1.1 and build and push lita-imgflip-memes-1.1.1.gem to Rubygems
-```
-
-----
-
-```
-❯❯❯ rake release                                                                                     ~/P/b/l/lita-doubler (master)
-lita-doubler 0.1.2 built to pkg/lita-doubler-0.1.2.gem.
-Tagged v0.1.2.
-Pushed git commits and tags.
-Pushed lita-doubler 0.1.2 to rubygems.org.
-```
-
-----
-
-![screenshot of the released gem](img/rubygems-screenshot.png) <!-- .element: style="border: none; width: 600px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
 
 ---
 
@@ -142,6 +136,63 @@ end
 
 ----
 
+## Built-in specs
+
+---
+
+## A tour of Lita skills
+
+----
+
+## DOUBLER
+Basic skill, 2+2
+
+----
+
+## IMGFLIP MACRO MAKER
+Jokes with friends
+
+----
+
+## WHAT'S BRAD EATING?
+HTML scraping a photoblog
+
+----
+
+## ALEXA NEWSFEED
+* Ephemeral storage
+* IoT integration
+
+----
+
+## ALEXA RECORDER
+
+* Multi-skill interaction
+
+---
+
+## Releasing the gem
+
+### rake release
+
+```
+❯❯❯ rake -T | grep rel
+rake release[remote]  # Create tag v1.1.1 and build and push lita-imgflip-memes-1.1.1.gem to Rubygems
+```
+
+----
+
+```
+❯❯❯ rake release                                                                                     ~/P/b/l/lita-doubler (master)
+lita-doubler 0.1.2 built to pkg/lita-doubler-0.1.2.gem.
+Tagged v0.1.2.
+Pushed git commits and tags.
+Pushed lita-doubler 0.1.2 to rubygems.org.
+```
+
+----
+
+![screenshot of the released gem](img/rubygems-screenshot.png) <!-- .element: style="border: none; width: 600px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
 
 ---
 
@@ -154,7 +205,7 @@ end
 <div style="float: right; width: 50%">
   <ul>
     <li>Find me at <a href="https://twitter.com/dpritchett">@dpritchett 🐦</a></li>
-    <li>Listen in on the 🎙 <a href="http://podcast.clearfunction.com">It Depends podcast! 🎙</a></li>
+    <li>Listen in on the 🎙 <a href="http://podcast.clearfunction.com/96df4cd6">It Depends podcast - chatbots episode! 🎙</a></li>
     <li>Hire us at <a href="http://clearfunction.com">clearfunction.com</a></li>
   </ul>
 </div>
