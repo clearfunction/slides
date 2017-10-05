@@ -11,6 +11,11 @@ Southeast Ruby 2017
 ## Thanks team Charnes 💗 
 
 ![Team Charnes](img/charnes-team.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none;" -->
+👶
+
+----
+
+![memphis ruby](img/memphis-ruby-logo.png) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none;" -->
 
 ---
 
@@ -32,17 +37,23 @@ A programmer
 
 Hearing impaired
 
-![Hearing aids are cool](img/moxi-fit-pro.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
-![Hearing aids are cool](img/ha-flipped.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+![hearing aid left](img/moxi-fit-pro.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+![hearing aid right](img/ha-flipped.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
 
 ----
 
-![Hearing aids are cool](img/hearing-aids-are-cool.jpg)
+![Hearing aids are cool](img/hearing-aids-are-cool.jpg) <!-- .element: style="border: none; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
+![udirect lady wearing a cool headset](img/udirect-lady.jpg) <!-- .element: style="width: 450px; border: none; background-color: rgba(0,0,0,0); box-shadow: none; " -->
 
 ---
 
+
+
 🤖
-###  Why chatbots?
+### Why chatbots?
 # > What's a chatbot though?
 ### How do I start a bot?
 ### Publish a gem!
@@ -55,6 +66,14 @@ Hearing impaired
 * Hubot & Lita
 
 ![slack logo](img/slack-logo.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
+![hubot splash screen](img/hubot-splash.png) <!-- .element: style="border: none; width: 960px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
+![lita splash screen](img/lita-splash.png) <!-- .element: style="border: none; width: 700px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
 
 ----
 
@@ -187,6 +206,10 @@ end
 
 ----
 
+Notes on deployment
+
+----
+
 ## A tour of Lita skills
 
 ----
@@ -223,6 +246,7 @@ HTML scraping a photoblog
 ### What's a chatbot though?
 ### How do I start a bot?
 # > Publish a gem!
+ok we already did that one 😅
 
 ----
 
@@ -257,6 +281,18 @@ Pushed lita-doubler 0.1.2 to rubygems.org.
 ----
 
 ![screenshot of the released gem](img/rubygems-screenshot.png) <!-- .element: style="border: none; width: 600px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
+I need to address a rumor
+
+----
+
+Rubygems download stats are REAL\*
+![really real downloads](img/real-downloads.png) <!-- .element: style="border: none; width: 600px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+<p>
+💯💯💯💯💯💯💯
+</p>
 
 ---
 
