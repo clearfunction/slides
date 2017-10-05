@@ -6,12 +6,35 @@ Southeast Ruby 2017
 
 ---
 
-## SPONSORS SLIDE?
-![Sponsors](img/sponsors.png) <!-- .element: style="border: none; width: 100%; background-color: rgba(0,0,0,0); box-shadow: none" -->
+## Thanks Jason and team 💗 
 
 ---
 
-# Who am I and why do I like chat so much?
+# What's a chatbot though?
+
+---
+
+### General purpose
+* Slackbot
+* IRC bot
+* Hubot & Lita
+
+### Specialized
+* Meeting schedulers
+* Ticket buyers (like Kayak or Priceline)
+
+
+## Who am I and why do I like chat so much?
+
+----
+
+A programmer
+
+----
+
+Hearing impaired
+
+![Hearing aids are cool](img/hearing-aids-are-cool.jpg)
 
 ---
 
