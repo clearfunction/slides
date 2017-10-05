@@ -2,27 +2,25 @@ Daniel Pritchett // Memphis, TN
 
 Southeast Ruby 2017
 
+![robot face](img/robot-emoji-large.png) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none;" -->
+
 ![Clear Function](img/clear-function-logo-white.svg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; margin-left: 225px" -->
 
 ---
 
-## Thanks Jason and team 💗 
+## Thanks team Charnes 💗 
+
+![Team Charnes](img/charnes-team.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none;" -->
 
 ---
 
-# What's a chatbot though?
+🤖
+# > Why chatbots?
+### What's a chatbot though?
+### How do I start a bot?
+### Publish a gem!
 
----
-
-### General purpose
-* Slackbot
-* IRC bot
-* Hubot & Lita
-
-### Specialized
-* Meeting schedulers
-* Ticket buyers (like Kayak or Priceline)
-
+----
 
 ## Who am I and why do I like chat so much?
 
@@ -34,13 +32,49 @@ A programmer
 
 Hearing impaired
 
+![Hearing aids are cool](img/moxi-fit-pro.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+![Hearing aids are cool](img/ha-flipped.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
 ![Hearing aids are cool](img/hearing-aids-are-cool.jpg)
 
 ---
 
-# What do chatbots look like?
+🤖
+###  Why chatbots?
+# > What's a chatbot though?
+### How do I start a bot?
+### Publish a gem!
+
+----
+
+### General purpose
+* Slackbot
+* IRC bot
+* Hubot & Lita
+
+![slack logo](img/slack-logo.jpg) <!-- .element: style="border: none; width: 300px; background-color: rgba(0,0,0,0); box-shadow: none; " -->
+
+----
+
+### Specialized
+* Meeting schedulers
+* Ticket buyers (like Kayak or Priceline)
+* Affirmations
+* Style coach
+
+![designing bots book](img/designing-bots.jpg)
 
 ---
+
+🤖
+###  Why chatbots?
+### What's a chatbot though?
+# > How do I start a bot?
+### Publish a gem!
+
+----
 
 # Meet Lita
 
@@ -52,17 +86,7 @@ Hearing impaired
 - Skills / handlers
 - Extensions
 
----
-
-## Tools covered
-
-* Hubot
-* Lita
-* `rake-release`
-* Heroku
-* Docker
-
----
+----
 
 ## A first Lita skill
 
@@ -161,7 +185,7 @@ end
 
 ## Built-in specs
 
----
+----
 
 ## A tour of Lita skills
 
@@ -194,13 +218,30 @@ HTML scraping a photoblog
 
 ---
 
-## Releasing the gem
+🤖
+### Why chatbots?
+### What's a chatbot though?
+### How do I start a bot?
+# > Publish a gem!
 
-### rake release
+----
+
+### rake release 😮
 
 ```
-❯❯❯ rake -T | grep rel
-rake release[remote]  # Create tag v1.1.1 and build and push lita-imgflip-memes-1.1.1.gem to Rubygems
+❯❯❯ rake -D
+
+rake build
+    Build lita-alexa-news-recorder-0.1.8.gem into the pkg directory.
+
+...
+
+rake release[remote]
+    Create tag v0.1.8 and build and push lita-alexa-news-recorder-0.1.8.gem to Rubygems
+    To prevent publishing in Rubygems use `gem_push=no rake release`
+
+rake spec
+    Run RSpec code examples
 ```
 
 ----
@@ -227,6 +268,7 @@ Pushed lita-doubler 0.1.2 to rubygems.org.
 
 <div style="float: right; width: 50%">
   <ul>
+    <li>Writing a chatbots book for PragProg!</li>
     <li>Find me at <a href="https://twitter.com/dpritchett">@dpritchett 🐦</a></li>
     <li>Listen in on the 🎙 <a href="http://podcast.clearfunction.com/96df4cd6">It Depends podcast - chatbots episode! 🎙</a></li>
     <li>Hire us at <a href="http://clearfunction.com">clearfunction.com</a></li>
