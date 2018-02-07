@@ -17,8 +17,6 @@ node_modules/
 css/reveal.min.css
 
 
-
-
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -84,3 +82,6 @@ fastlane/report.xml
 fastlane/screenshots
 
 Coverage
+
+Thumbs.db
+yarn-error.log
