@@ -1,6 +1,6 @@
 ## Practical Object-Oriented Design in Ruby
 
-[gif here]
+![opener gif](/images/opener.gif)
 
 Benjamin J. Robin
 
@@ -14,9 +14,22 @@ _with lots of help from Sandi Metz_
 
 I'm Ben
 
-[waving gif]
+![waving gif!](/images/waving-gosling.gif)
 
 _thank you for coming_
+
+<..>
+
+## The Problem
+
+<p class="fragment fade-in">some code smells</p>
+<p class="fragment fade-in"><em>...and we don't always know why</em></p>
+
+<..>
+
+## The Solution
+
+<p class="fragment fade-in">![toolbelt](images/toolbelt.jpg)</p>
 
 <..>
 
@@ -24,16 +37,4 @@ _thank you for coming_
 
 * In software development, things change.
 * Additional logic will be added that is not yet present
-* Whole-life maintainability over present-state optimization
-
-<..>
-
-## The Problem:
-
-_some code smells_
-
-<..>
-
-## The Solution in a Word Picture
-
-[toolbelt gif]
+* The best code is easy to change over its whole life
