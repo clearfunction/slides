@@ -125,31 +125,31 @@ daniel@Molly-Millions ~/c/d/diceRoller>
 Ok, maybe this is just one really tiny web app.
 
 ```sh
-daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice-roller.pritchettbots.com
  -----
 | o   |
 |     |
 |   o |
  -----⏎                                                                                                                           
-daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice-roller.pritchettbots.com
  -----
 | o   |
 |  o  |
 |   o |
  -----⏎                                                                                                                           
-daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice-roller.pritchettbots.com
  -----
 | o   |
 |  o  |
 |   o |
  -----⏎                                                                                                                           
-daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice.dpritchett.net
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> curl https://dice-roller.pritchettbots.com
  -----
 | o   |
 |     |
 |   o |
  -----⏎
-daniel@Molly-Millions ~/c/s/free-ssl-microservice> time curl https://dice.dpritchett.net
+daniel@Molly-Millions ~/c/s/free-ssl-microservice> time curl https://dice-roller.pritchettbots.com
  -----
 | o   |
 |  o  |
@@ -225,7 +225,7 @@ end
 ```sh
 root@bloggy:/etc/caddy cat Caddyfile
 # dice demo
-dice.dpritchett.net {
+dice-roller.pritchettbots.com {
         proxy / localhost:8001
         log syslog
 }
