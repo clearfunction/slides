@@ -53,3 +53,12 @@ The Law of Demeter
 <..>
 
 Your familiarity with the public interfaces of known objects may lead you to string together long message chains to get at distant behavior.
+
+<..>
+
+## Summary: Creating Flexible Interfaces
+
+* OOP is defined by messages that pass between objects.
+* This message passing takes place along "public" interfaces.
+* Well-defined public interfaces consist of stable methods that expose the responsibilities of their underlying classes and provide maximal benefit at minimal cost.
+* We want to pass _trusting_ messages that ask for waht the sender wants without telling the receiver how to behave.

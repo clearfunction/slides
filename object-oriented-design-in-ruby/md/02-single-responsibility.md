@@ -191,3 +191,11 @@ $ puts Gear.new(52, 11, @wheel).gear_inches
 $ puts Gear.new(52, 11).ratio
 # -> 4.72727272727273
 ```
+
+<..>
+
+## Summary: Classes with a Single Responsibility
+
+* Changeable, maintainable software begins with classes that have a single responsibility.
+* Classes that do one thing _isolate_ that thing from the rest of your application.
+* This isolation allows change without consequence and reuse without duplication.

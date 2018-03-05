@@ -1,5 +1,7 @@
 # Closing
 
+![poodr](images/poodr.jpg)
+
 <!-- .slide: data-background-image="/images/closing.gif" -->
 
 <!-- .slide: class="shadowed-text" -->
