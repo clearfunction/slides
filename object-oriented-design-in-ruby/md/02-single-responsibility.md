@@ -1,20 +1,26 @@
 ## Designing Classes with a Single Responsibility
 
-The foundation of an object-oriented system is the _message_, but the most visible organizational structure is the _class_.
-
-This section will cover _what belongs in a class_
-
-_insist that it be simple_
-
-make sure it does waht it is supposed to do _right now_ and is also easy to change _later_.
+<p class="fragment fade-in">Subject: <em>what belongs in a class</em></p>
+<p class="fragment fade-in">Mission: <em>insist that it be simple</em></p>
 
 <..>
 
-Sandi Says...
+## First Things First
+
+<p class="fragment fade-in">The foundation of an object-oriented system is the <em>message</em>, but the most visible organizational structure is the <em>class</em>.</p>
+<p class="fragment fade-in">See that it does what it is supposed to do <em>right now</em> and is also easy to change <em>later</em>.</p>
+
+<..>
+
+## Sandi Says...
 
 "The quality of easy changeability reveals the craft of programming."
 
-Easy to change means:
+![craft](images/craft.gif)
+
+<..>
+
+## Easy to change:
 
 * Changes have no unexpected side effects
 * Small changes in requirements require correspondingly small changes in code
@@ -23,28 +29,33 @@ Easy to change means:
 
 <..>
 
-Code qualities
+## Code qualities:
 
-* **Transparent** The consequences of change should be obvious in the code that is changeing and in distant code that relies upon it
-* **Reasonable** The cost of any change should be proportional to the benefits the change acheives
-* **Usable** Existing code should be usable in new and unexpected contexts
-* **Exemplary** The code itself should encourage those who change it to perpetuate these qualities
+* **Transparent** - Obvious consequences of change
+* **Reasonable** - Proportional cost and benefits
+* **Usable** - Usable in new and unexpected contexts
+* **Exemplary** - Encourages perpetuating these qualities
 
-Let's write _TRUE_ code!
+<p class="fragment fade-in">Let's write <em>TRUE</em> code!</p>
 
 <..>
 
 ## Let's talk about SRP
 
-In principle, classes should have a single responsibility (SRP).
+![responsibility](images/responsibility-1.gif)
 
-That is, a class should do the smallest possible useful thing.
+<p class="fragment fade-in">In principle, classes should have a single responsibility.</p>
+<p class="fragment fade-in">That is, a class should do the smallest possible useful thing.</p>
 
-Applications that are easy to change consist of classes taht are easy to reuse.
+<..>
 
-A class taht has more than one responsiblity is difficult to reuse.
+## Let's talk about SRP
 
-You increase your application's chance of breaking unexpectedly if you depend on classes that do too much.
+![responsibility](images/responsibility-2.gif)
+
+<p class="fragment fade-in">Apps are easy to change when classes are easy to reuse.</p>
+<p class="fragment fade-in">A class with more than one responsiblity is difficult to reuse.</p>
+<p class="fragment fade-in">You increase your application's chance of breaking unexpectedly if you depend on classes that do too much.</p>
 
 <..>
 
@@ -54,7 +65,15 @@ You increase your application's chance of breaking unexpectedly if you depend on
 * You can't use the word "and"
 * You can't use the word "or"
 
+![happy programmer](images/happy-programmer.gif)
+
+<..>
+
+## Determining if a Class Has a Single Responsibility
+
 "SRP doesn't require that a class do only one very narrow thing or that it change for only a single nitpicky reason, instead SRP requires that a class be cohesive -- that everything the class does be highly related to its purpose."
+
+![frustrated programmer](images/stressed-programmer.gif)
 
 <..>
 
@@ -62,13 +81,12 @@ You increase your application's chance of breaking unexpectedly if you depend on
 
 "When the future cost of doing nothing is the same as the current cost, postpone the decision. Make the decision only when you must with the information yo uhave at that time."
 
-(dicuss)
-
-"This 'improve it now' versus 'improve it later' tension always exists."
+<p class="fragment fade-in">(dicuss)</p>
+<p class="fragment fade-in">This is a tension to live in.</p>
 
 <..>
 
-## Writing Code that Embraces Change
+## Code that Embraces Change
 
 * Depend on behavior, not data
 * Hide instance variables
@@ -78,9 +96,9 @@ You increase your application's chance of breaking unexpectedly if you depend on
 
 <..>
 
-## An SRP Refacorting Journey
+## An SRP Refactoring Journey
 
-![bicycle gears](/images/gears.jpg)
+<p class="fragment fade-in">![bicycle gears](/images/gears.jpg)</p>
 
 <..>
 
@@ -103,6 +121,12 @@ end
 $ puts Gear.new(52, 11).ratio
 # -> 4.72727272727273
 ```
+
+<..>
+
+## New requirements
+
+![bicycle wheels](/images/wheels.png)
 
 <..>
 
@@ -139,19 +163,20 @@ $ puts Gear.new(52, 11).ratio # didn't this used to work?
 
 ```ruby
 class Gear
-  attr_reader :chainring, :cog, :wheel
-  def initialize(chainring, cog, wheel = nil)
+  attr_reader :chainring, :cog, :rim, :tire
+  def initialize(chainring, cog, rim, tire)
     @chainring = chainring
     @cog = cog
-    @wheel = wheel
+    @rim = rim
+    @tire = tire
+  end
+
+  def gear_inches
+    ratio * Wheel.new(rim, tire).diameter
   end
 
   def ratio
     chainring / cog.to_f
-  end
-
-  def gear_inches
-    ratio * wheel.diameter
   end
 
 end
@@ -194,7 +219,7 @@ $ puts Gear.new(52, 11).ratio
 
 <..>
 
-## Summary: Classes with a Single Responsibility
+## Summary: SRP Classes
 
 * Changeable, maintainable software begins with classes that have a single responsibility.
 * Classes that do one thing _isolate_ that thing from the rest of your application.

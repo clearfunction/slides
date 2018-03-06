@@ -1,22 +1,52 @@
-## Managing Dependencies
+## More on OOP
 
-In OOP, each message is initiated by an object to invoke some bit of behavior. All of the behavior is dispersed among the objects.
-
-Therefore, for any desired behavior, an object either knows it personally, inherits it, or knows another object who knows it.
-
-This section is about the third, getting access to behavior when that behavior is implemented in _other_ objects.
+<p class="fragment fade-in">All of the behavior is dispersed among the objects.</p>
+<p class="fragment fade-in">Each message is initiated to invoke some bit of behavior.</p>
+<p class="fragment fade-in">Therefore, for any desired behavior, an object either:</p>
+<p class="fragment fade-in">• knows it personally</p>
+<p class="fragment fade-in">• inherits it</p>
+<p class="fragment fade-in">• knows another object who knows it</p>
 
 <..>
+
+## Managing Dependencies
+
+Subject: accessing behavior implemented in _other_ objects.
+
+![dependent](images/dependent-1.gif)
+
+<..>
+
+## Things to Consider
 
 _Knowing_ creates a dependency.
 
-If not managed carefully, these dependencies will stangle your application.
+![dependent](images/knowing.gif)
 
-[gif here]
+<p class="fragment fade-in">If not managed carefully, these dependencies will stangle your application.</p>
+
+<..>
+
+## Defining Dependency
 
 An object depends on another object if, when one object changes, the other might be forced to change in turn.
 
+![dependent](images/dependent-2.gif)
+
 <..>
+
+## Recognizing Dependencies
+
+An object has a dependency when it knows:
+
+1.  The name of another class.
+2.  The name of a message that it intends to send to someone other than `self`.
+3.  The arguments that a message requires.
+4.  The order of those arguments.
+
+<..>
+
+## Back to our little journey
 
 ```ruby
 class Wheel
@@ -67,30 +97,19 @@ $ puts Gear.new(52, 11, 26, 1.5).gear_inches
 
 <..>
 
-## Recognizing Dependencies
-
-An object has a dependency when it knows:
-
-* The name of another class.
-* The name of a message that it intends to send to someone other than `self`.
-* THe arguments that a message requires.
-* The order of those arguments.
-
-<..>
-
-## Coupling Between Objects (CBO)
-
-The more tightly coupled two objects are, the more they behave like a single entity.
+## Coupling Between Objects
 
 ![dependencies](images/dependencies.jpg)
 
-When two (or three or more) objects are so tightly coupled that they behave as a unit, it's impossible to reuse just one. Changes to one force changes to all.
+<p class="fragment fade-in">Objects behave like a single entity.</p>
+<p class="fragment fade-in">Relatively impossible to reuse <em>just one</em>.</p>
+<p class="fragment fade-in">Changes to one force changes to <em>all</em>.</p>
 
 <..>
 
-## Let's look at those four kinds of dependencies!
+## Let's look at those dependencies
 
-[gif here]
+![sobbing](images/sobbing.gif)
 
 <..>
 
@@ -120,13 +139,13 @@ $ puts Gear.new(52, 11, Wheel.new(26, 1.5)).gear_inches
 
 <..>
 
-`Gear` doesn't know or care that the object might be an instance of class `Wheel`. `Gear` only knows that it holds an object that responds to `diameter`.
+`Gear` doesn't "know or care" that the object might be an instance of class `Wheel`. `Gear` only knows that it holds an object that responds to `diameter`.
 
-`Gear` is now smarter because it knows less.
+<p class="fragment fade-in">`Gear` is now smarter because it knows less.</p>
 
 <..>
 
-## Isolate Dependencies
+## Ways to Isolate Dependencies
 
 * Isolate Instance Creation
 * Isolate Vulnerable External Messages
@@ -152,7 +171,7 @@ class Gear
 
 <..>
 
-## Isolate Instance Creation
+Isolating Instance Creation, Part Deux
 
 ```ruby
 class Gear
@@ -185,7 +204,7 @@ def gear_inches
 end
 ```
 
-This is pretty benign, but...
+<p class="fragment fade-in">This is pretty benign, but...</p>
 
 <..>
 
@@ -199,7 +218,7 @@ def gear_inches
 end
 ```
 
-[scared gif here]
+<p class="fragment fade-in">![scared](images/scared.gif)</p>
 
 <..>
 
@@ -215,7 +234,7 @@ def diameter
 end
 ```
 
-[confident gif here]
+<p class="fragment fade-in">![confident](images/confident.gif)</p>
 
 <..>
 
@@ -241,7 +260,7 @@ Gear.new(
 
 <..>
 
-## Use named parameters for initialization arguments
+Use named parameters for initialization arguments
 
 ```ruby
 class Gear
@@ -263,7 +282,7 @@ Gear.new(
 
 <..>
 
-## Explicitly define defaults
+Explicitly define defaults
 
 ```ruby
 class Gear
@@ -336,9 +355,9 @@ $ Wheel.new(26, 1.5, 52, 11).gear_inches
 
 ## Choosing dependency direction
 
-* Some classes are more likely than others to have changes in requirements.
-* Concrete classes are more likely to change than abstract classes.
-* Changing a class that has many dependents will result in widespread consequences.
+<p class="fragment fade-in">Some classes are more likely than others to require changes.</p>
+<p class="fragment fade-in">Concrete classes change more likely than abstractions.</p>
+<p class="fragment fade-in">Changing a class with many dependents can end poorly.</p>
 
 <..>
 
@@ -352,7 +371,9 @@ _Depend on things that change less often than you do._
 
 <..>
 
-## Summary: Managing Dependencies
+## Summary:
+
+## Managing Dependencies
 
 * This is one way to future-proof applications.
 * Injecting dependencies creates loosely coupled objects that can be reused in novel ways.
