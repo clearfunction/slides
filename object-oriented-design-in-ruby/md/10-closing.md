@@ -1,5 +1,11 @@
 # Closing
 
+![fundamentals](images/fundamentals.jpg)
+
+<..>
+
+## Brought to you by
+
 ![poodr](images/poodr.jpg)
 
 <..>

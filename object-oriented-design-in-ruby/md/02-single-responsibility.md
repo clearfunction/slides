@@ -33,7 +33,7 @@
 
 * **Transparent** - Obvious consequences of change
 * **Reasonable** - Proportional cost and benefits
-* **Usable** - Usable in new and unexpected contexts
+* **Usable** - Composable for new and unexpected contexts
 * **Exemplary** - Encourages perpetuating these qualities
 
 <p class="fragment fade-in">Let's write <em>TRUE</em> code!</p>
@@ -62,8 +62,9 @@
 ## Determining if a Class Has a Single Responsibility
 
 * Answer the question: What does it do?
-* You can't use the word "and"
-* You can't use the word "or"
+
+<p class="fragment fade-in">You can't use the word "and"</p>
+<p class="fragment fade-in">You can't use the word "or"</p>
 
 ![happy programmer](images/happy-programmer.gif)
 
@@ -81,7 +82,7 @@
 
 "When the future cost of doing nothing is the same as the current cost, postpone the decision. Make the decision only when you must with the information yo uhave at that time."
 
-<p class="fragment fade-in">(dicuss)</p>
+<p class="fragment fade-in">(discuss)</p>
 <p class="fragment fade-in">This is a tension to live in.</p>
 
 <..>

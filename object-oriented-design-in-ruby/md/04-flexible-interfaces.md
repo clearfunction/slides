@@ -56,7 +56,9 @@ Your familiarity with the public interfaces of known objects may lead you to str
 
 <..>
 
-## Summary: Creating Flexible Interfaces
+## Summary:
+
+## Creating Flexible Interfaces
 
 * OOP is defined by messages that pass between objects.
 * This message passing takes place along "public" interfaces.

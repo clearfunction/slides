@@ -7,8 +7,8 @@
 ## A Way to View Development
 
 <p class="fragment fade-in">Not a collection of predefined procedures</p>
-<p class="fragment fade-in">Series of messages that pass between objects</p>
-<p class="fragment fade-in">With this perspective, the rest is just natural!</p>
+<p class="fragment fade-in">A series of messages that pass between objects</p>
+<p class="fragment fade-in">With this perspective, <em>the rest is just natural</em></p>
 
 <..>
 

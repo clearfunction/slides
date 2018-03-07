@@ -33,8 +33,8 @@ _thank you for coming_
 
 <..>
 
-## Reality Check
+## In Software Development
 
-* In software development, things change.
-* Additional logic will be added that is not yet present
-* The best code is easy to change over its whole life
+<p class="fragment fade-in">Things change.</p>
+<p class="fragment fade-in">Additional logic will be added that is not yet present.</p>
+<p class="fragment fade-in">The best code is easy to change over its whole life.</p>
